@@ -7,7 +7,7 @@ select PropStreet, PropCity from propertyforrent
 where OwnerNo is null;
 
 -- Question #2605
-select PropCity, Type, from propertyforrent
+select PropCity, Type from propertyforrent
 where PropPostcode like '4%4';
 
 -- Question #2611
