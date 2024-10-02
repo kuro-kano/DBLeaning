@@ -49,7 +49,7 @@ right outer join privateowner po on (pf.OwnerNo = po.OwnerNo);
 -- Question #2755
 select oFirstName, oLastName, OwnerTel from propertyforrent pf
 right outer join privateowner po on (pf.OwnerNo = po.OwnerNo)
-where propertyforrent.Owner is null;
+where pf.OwnerNo is null;
 
 -- Question #2756
 select avg(Salary) `AverageSalary` from staff;
